@@ -1,5 +1,4 @@
 # Importing libraries
-import csvkit
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -11,11 +10,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score,confusion_matrix,recall_score,precision_score,f1_score
 
 # load dataset
-file_name='diabetes.csv' # Must be full path
-with open(file_name,'rb') as f:
-    reader = csvkit.reader(f)
-    df = reader
-
+df = pd.read_csv("diabetes.csv")
 # title 
 st.title('Diabetes Detection')
 
