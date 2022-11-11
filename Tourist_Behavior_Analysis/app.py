@@ -28,7 +28,7 @@ st.markdown(hide_menu_style, unsafe_allow_html=True)
 st.title("Tourist Behavior ✈")
 st.markdown('---')
 
-df = pd.read_csv('tourist_behavior.CSV')
+df = pd.read_csv("tourist_behavior.csv")
 
 with st.sidebar:
     selected = option_menu(
