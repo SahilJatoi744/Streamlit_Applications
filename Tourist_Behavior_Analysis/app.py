@@ -61,8 +61,8 @@ if selected == 'Introduction':
     st.markdown('---')
    
     c1 , c2 = st.columns(2)
-    img1 = Image.open('images/img1.png')
-    img2 = Image.open('images/img2.png')
+    img1 = Image.open("images/img1.png")
+    img2 = Image.open("images/img2.png")
     with c1:
         st.image(img1, width=500)
     with c2:
