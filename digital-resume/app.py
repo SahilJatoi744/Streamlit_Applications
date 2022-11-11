@@ -20,7 +20,7 @@ Data Scientist | Deep learning | Machine Learning | AI | GCP | Vice Chair ACM & 
 """
 EMAIL = "sahiljatoi744@gmail.com"
 SOCIAL_MEDIA = {
-    "YouTube": "https://youtube.com/c/Sahil Jatoi",
+    "YouTube": "https://www.youtube.com/channel/UCcaSvmyWD1aspd8pukTbjHg",
     "LinkedIn": "https://www.linkedin.com/in/sahil-jatoi-ba10731b3/",
     "GitHub": "https://github.com/SahilJatoi744",
     "Twitter": "https://twitter.com/Jatoi8Sahil",
