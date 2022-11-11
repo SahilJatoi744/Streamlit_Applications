@@ -14,8 +14,7 @@ from sklearn.metrics import accuracy_score,confusion_matrix,recall_score,precisi
 file_name='diabetes.csv' # Must be full path
 with open(file_name,'rb') as f:
     reader = csvkit.reader(f)
-    print reader
-df = pd.read_csv('diabetes.csv')
+    df = reader
 
 # title 
 st.title('Diabetes Detection')
