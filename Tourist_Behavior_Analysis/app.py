@@ -41,8 +41,8 @@ if uploaded_file is not None:
         return csv
     df = load_data()
 
+# df = pd.read_csv("tourist_behavior.csv")
 
-df = pd.read_csv("tourist_behavior.csv")
 
 with st.sidebar:
     selected = option_menu(
