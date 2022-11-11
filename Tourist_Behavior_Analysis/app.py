@@ -28,6 +28,23 @@ st.markdown(hide_menu_style, unsafe_allow_html=True)
 st.title("Tourist Behavior ✈")
 st.markdown('---')
 
+with st.sidebar.header("Upload you dataset (.csv)"):
+    uploaded_file = st.sidebar.file_uploader('Upload your file', type=['csv'])
+    df = sns.load_dataset('titanic')
+    
+Machine_Learning_Model_name = st.sidebar.selectbox('Select Model', (
+    'Linear R', 'Decision tree R', 'KNN R', 'SVR R'))
+
+    # profiling report for pandas
+
+if uploaded_file is not None:
+    #@st.cache
+    def load_data():
+        csv = pd.read_csv(uploaded_file, encoding='latin-1')
+        return csv
+    df = load_data()
+
+
 df = pd.read_csv("tourist_behavior.csv")
 
 with st.sidebar:
