@@ -32,9 +32,6 @@ with st.sidebar.header("Upload you dataset (.csv)"):
     uploaded_file = st.sidebar.file_uploader('Upload your file', type=['csv'])
     df = sns.load_dataset('titanic')
     
-Machine_Learning_Model_name = st.sidebar.selectbox('Select Model', (
-    'Linear R', 'Decision tree R', 'KNN R', 'SVR R'))
-
     # profiling report for pandas
 
 if uploaded_file is not None:
