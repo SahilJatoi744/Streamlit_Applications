@@ -1,0 +1,8 @@
+streamlit
+numpy 
+pandas
+seaborn
+plotly
+matplotlib
+streamlit_option_menu
+pillow
